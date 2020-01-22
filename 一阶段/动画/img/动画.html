@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        body{
+            min-width: 320px;
+        }
+        .main{
+            width: 200px;
+            height: 200px;
+            float: left;
+        position: relative;
+            background: blue;
+        }
+        .main img{
+            width: 20%;
+            height: 10%;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            opacity: 0;
+            animation: move 1s linear  infinite forwards;
+        }
+        .sun{
+           
+            width: 200px;
+            height: 200px;
+           float: right;
+           top: 20px;
+           right: 0;
+           background: red;
+           position: relative;
+        }
+        /* 伪类选择器的用法减少了div的书写，效果和div一样，注意content不要丢 */
+        .sun:before,.sun:after{
+            content: "";
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            /* 已知元素的水平和垂直对齐可以用margin来写，
+            但是前提他的父元素要有border值，不然会造成margin塌陷问题 */
+            top: 50%;
+             left: 50%;
+             transform: translate(-50%,-50%);
+            border-radius: 50%;
+            background-color:rgba(255, 255, 255, 0.5);
+            animation:  sun 2.5s   infinite;
+
+        }
+        .sun::after{
+            width: 80px;
+            height: 80px;
+            background-color:rgba(255, 255, 255, 0.7);
+            animation:  sun 2.55s   infinite;
+        }
+        @keyframes move{
+            0%{opacity: 1;
+                transform: scale(1) ; 
+                
+            }
+            50%{
+                transform: scale(1.5) ;
+            }
+            100%{
+                transform: scale(1) ;
+            }
+        }
+        @keyframes sun{
+            0%{ 
+                transform: scale(1) translate(-50%,-50%);
+               box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.8);
+            }
+            50%{
+                 transform: scale(1.1) translate(-50%,-50%);
+                box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+                }
+            100%{ 
+                transform: scale(1)translate(-50%,-50%);
+                box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.8);
+                }
+
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+      <img src="../img/2.png" alt="">
+</div> 
+<div class="sun">    
+   </div>
+   <div>
+
+   </div>
+ 
+</body>
+</html>

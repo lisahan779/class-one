@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+    display: flex;
+    justify-content: space-evenly;
+}
+navimg{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+nav {
+    flex: 3;
+}  
+.menu-name{
+
+        display: none;
+    }
+nav a{
+    float: left;
+     display: block;
+     text-align: center;
+     text-decoration: none;
+     width: 100px;
+     height: 60px;
+     line-height: 60px;
+}
+/* 注意媒体查询的样式写在css样式之后他后面无其他css样式 */
+
+    @media all and (min-width:1200px){
+        nav a{
+          color: aqua;
+      }
+  }
+      @media all and (min-width:1000px) and (max-width:1200px){
+      
+      nav a{
+          color: red;
+      } 
+
+      }
+      @media all and (min-width:800px) and (max-width:1000px){
+        nav a{
+          color: yellow;
+      }
+   
+}
+@media all and (max-width:900px){
+   nav a{
+       display: none;
+   }
+    .menu-name{
+        background-color: blue;
+        display: block;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <navimg>
+  <a href=""> <img src="img/logo.png" alt=""></a>
+        </navimg>
+
+<nav>
+    <a href="">啊啊啊啊</a>
+    <a href="">啊啊啊啊</a>
+    <a href="">啊啊啊啊</a>
+    <a href="">啊啊啊啊</a>
+    <a href="">啊啊啊啊</a>
+    <a href="">啊啊啊啊</a>
+    <a href="">啊啊啊啊</a>
+    <a href="">啊啊啊啊</a>
+</nav>
+<div class="menu-name">
+    <img src="img/menu.png">
+    </div>
+    </header>
+</body>
+</html>

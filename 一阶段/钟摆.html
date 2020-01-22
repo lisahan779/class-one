@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .bai{
+            width: 120px;
+            height:auto;
+            margin: 0 auto;
+            position: relative;
+            transform-origin: center top;
+            transform: rotate(-30deg);
+            animation: sway 2.2s infinite alternate ease-in-out;/*alternate:反向*/
+        }
+        .bai img:nth-of-type(1){
+            width: 100%;
+            height: auto;
+        }
+        .bai img:nth-of-type(2){
+            position: absolute;
+            width: 8%;
+            height:auto;
+            bottom:49px;
+            left:55px;
+            transform-origin: center 68%;
+            animation: second 60s infinite linear;/*infinite:无限循环*/
+
+        }
+        @keyframes second {
+            to{
+                transform: rotate(355deg);
+            }
+        }
+        @keyframes sway {
+            to{
+                transform: rotate(30deg);
+            }
+        }
+
+
+    </style>
+    <script src="wen.js">
+           
+            </script>
+</head>
+
+<body>
+    <div class='bai'>
+<img src="img/biao.jpg" alt="">
+<img src="img/zheng.jpg" alt="">
+    </div>
+</body>
+</html>

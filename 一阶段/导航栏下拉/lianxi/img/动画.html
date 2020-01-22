@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+}
+div{
+
+    width: 80px;
+    height: 100px;
+    position:absolute;
+    background-color: blue;
+    border-end-end-radius: 20px;
+    right: -80px;
+    animation:paly 10s ease-in-out 2s  alternate none;
+}
+
+@keyframes paly{
+             0%{
+                right: -80px;
+                font-size: 25px;
+                background-color: brown;
+            }
+            10%{
+                right: 80px;
+                border: 5px dashed red;
+            }
+            20%{
+                right: 300px;
+                background-color: yellow;
+            }
+            30%{
+                transform: rotate(30deg);
+                background-color: blue;
+            }
+            40%{right: 500px;
+                background-color: green;
+            }
+            50%{
+                right: 750px;
+                transform: rotate3d(0,0,1,360deg) ;
+                background-color:palegreen;
+            }
+            60%{right: 850px;
+                transform: rotateX(50deg) rotateY(50deg);
+            }
+            80%{
+                right: 900px;
+                transform: rotate3d(0,0,1,-40deg);
+            }
+            100%{
+                right: 1400px;
+            }
+        
+ }   
+ .nav{
+    width: 200px;
+    height: 200px;
+    border: 1px dashed red;
+    position: fixed;
+}
+</style>
+<body>
+    <div>
+       我是动画 
+    </div>
+    <div class="nav">
+
+    </div>
+</body>
+</html>

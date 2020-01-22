@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* body{
+	width: 100%;
+   position: relative;
+   } */
+   a{text-decoration: none;
+   color: gray;}
+   a:hover{
+   	color: red;
+   }
+   body,html{
+	   height: 100%;
+   }
+   li{
+   	text-decoration: none;
+   	list-style-type: none;
+   	font-size: 18px;
+	margin: 0 20px;
+   	color: gray;
+   	display:inline-block;
+   }
+.top{
+	width: 100%;
+	height: 84%;
+	background-image: url(img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+.center {
+	text-align: center;
+	width: 100%;
+    height: 11%;
+}
+/* .center */ ul{
+	position: relative;    /* 对ul相对定位(它的父亲就是它的参照)并设置要去的位置 同理底下的p*/
+	top: 45%;
+}
+.bottom{
+	text-align: center;
+	width: 100%;
+	height: 5%;
+	/* line-height: 5%;   */                    
+	border-top: 1px solid gray;
+background-color: #e4dbdb;}
+.bottom p{
+	position: relative;
+	top: 30%;
+	font-size: 12px;
+	color: slategray;
+}

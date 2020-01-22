@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    border: 1px dashed red;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+   
+}
+.nav img{
+width: 450px;
+height: 400px;
+    box-shadow: 5px 5px 15px 10px grey;
+     transition: all 500ms 10ms ease-in-out;
+    
+}
+img:hover{
+    transform: rotateX(50deg) rotateY(-30deg) rotateZ(-20deg);
+    box-shadow: 5px 15px 15px 10px white;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="pic_03.png" alt="">
+    </div>
+</body>
+</html>

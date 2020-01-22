@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+.con{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: gainsboro;
+}
+h3{
+	font-weight: 300;
+	font-size: 16px;
+	
+}
+.con-1{
+	color: #808080;
+	width: 1200px;
+	height: 180px;
+	background-color: white;
+	border: 1px solid #c9c9c9;
+}
+.B label,.B-1 label,.B-2 label{                                    /* 不同盒子的某有个标签需要相同样式的加法 */
+	width: 200px;                                /* 给label加居中就不能给他的祖先元素加text-align: center;防止有些label后面跟的内容宽度不够造成不一致. */
+	display: inline-block;
+	text-align: right;
+
+}
+.B ,.B-1,.B-2{
+margin-left: 372px;
+	margin-top: 20px ;
+}
+.B-1 input{
+	border: 1px solid #c9c9c9;
+	background-image: url(img/one4.jpg);
+	background-repeat: no-repeat;
+	background-position: right center; }
+	.B-2 input{
+		border: 1px solid #c9c9c9;
+			background-image: url(img/one5.jpg);
+			background-repeat: no-repeat;
+			background-position: right center;
+	}
+ span{
+	 color: red;
+}
+ .C{
+	margin-top: 30px;
+text-align: center;
+ }
+ .C input{
+ text-align: center;
+ background-color: #FF0000;
+ color: #FFFFFF;
+	 display: inline-block;
+ width: 146px;
+ height: 40px;}
+ .C input:hover{
+	 cursor: pointer;        /* 考虑优先级的问题   文字在哪个标签里面就给那个元素加对应的鼠标点击属性 */
+	background-color: brown;
+	 color: white;
+ }

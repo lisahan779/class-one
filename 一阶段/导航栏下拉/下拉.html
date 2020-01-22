@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{margin: 0;
+    padding: 0;
+    }
+    li{
+        list-style: none;
+        /* display: inline-block; */ 
+        /* 设置这种方法默认li水平排列后有间隔，
+        解决办法是给他的父元素加font-size:0; */
+    }
+    .nav{
+        width: 1000px;
+        height: 50px;
+        margin: 0 auto; 
+        /* font-size: 0;  */
+    }
+    .nav li{
+        /* 设置浮动的方法不会出现li之间有空隙，不需要再单独给li设置字体大小 */
+        float: left;
+        /* font-size: 16px; */
+        width: 110px;
+         text-align: center;
+         padding-left: 10px;
+        /* padding默认会把盒子撑大，加下面的属性解决 */
+        box-sizing: border-box;
+        border: 1px solid black; 
+        position: relative;
+    }
+    .nav li::after{
+        content: "";
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        display: block;
+        background: red;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .nav li:nth-of-type(2){
+        position: relative;
+    }
+    .wen{
+        width: 110px;
+        position: absolute;
+        top: 22px;
+        right: -1px;
+        text-align: center;
+        display: none ; 
+    }
+    .wen li{
+      /* li继承了祖先元素的边框属性  */
+    border-top:0px; 
+
+        /* display: list-item; */
+
+        
+    }
+    .nav li:hover .wen{
+        /* 鼠标点击后显示 */
+display: block;
+    }
+    .wen li:hover{
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <li>哈哈</li>
+        <li>我的卖家  
+            <ul class="wen">
+            <li> <a href="#">列表1</a> </li>
+            <li> <a href="#">列表2</a></li>
+            <li> <a href="#">列表3</a></li>
+            <li> <a href="#">列表4</a></li>
+        </ul>
+    </li>
+        <li>哇 </li>
+        <li>发 </li>
+        <li>日访问的</li>
+        <li>他发热</li>
+      
+    </div>
+    <p>测试段落</p>
+</body>
+</html>

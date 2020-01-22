@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+         input :nth-child(3){
+			color: red;
+		}
+		#A:checked+label{
+			color: red;
+		}
+		input:disabled{
+			background: coral;
+		}
+	/* 	:root{background-color: #FF0000;} */
+	html,body{background-color: aliceblue;}
+	p{display: none;}
+	p:target{
+		display: block;
+	}
+	input[value="miam"]{
+		background-color: #00FFFF;
+	}
+	.header{width: 200px;
+	height: 200px;
+	background-color: blue;
+	border: 1px solid black;
+	padding: 20px;
+	height: 500px;
+		box-sizing: border-box;   /* 改变内边距不会改变盒子大小 */
+	}
+	.con{
+		border: 1px solid black;
+		width: 300px;
+		height: 420px;
+	flex-direction: row;   /* 从右向左 */
+	display: flex;
+	align-content: flex-end;
+	flex-wrap:wrap;         /* 换行表示 */
+	}
+	.con>div:nth-child(1){     /* 高级选择器第一个 */
+		width: 150px;height: 20px;
+		background-color: red;
+	}
+	.con>div:nth-child(2){
+		width: 150px;
+		height: 20px;
+		background-color: #FF7F50;
+	}
+	.con>div:nth-child(3){
+		width: 150px;height: 20px;
+	}
+	</style>
+	<body>
+		<form action="" method="">
+			<input type="text" name="niaho h" id="" value="hahahha"  disabled="disabled"/>
+		<input type="checkbox" name="hah" id="A" value="篮球" disabled="disabled" /><label for="A">爱好</label>
+		
+		<input type="button" name="" id="B" value="提交" /><label for="B"></label>	
+		</form>
+		<div class="header">
+			<a href="#news">nih</a>
+			<p id="news"> habw</p>
+			<!-- 属性选择器用的多 -->
+			<input type="text" name="pwd" id="" value="miam" />
+			<input type="text" name="pwd" id="" value="miam2" />
+			<input type="text" name="pwd" id="" value="miam3" />
+			
+		</div>
+		<div class="con">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+	</body>
+</html>

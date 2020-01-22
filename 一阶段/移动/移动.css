@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 26.67vw;
+    background-color: rgb(246, 246, 246)
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+     background-color: rgb(0, 133, 207)
+}
+header img{
+    height: 0.4rem;
+}
+header p{ 
+    font-size: 0rem;
+}
+header p>span{
+position: relative;
+top: -0.13rem;
+    color: white;
+    font-size: 0.16rem;
+}
+main img{
+    width: 3.75rem;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ font-size: 0.16rem;
+    width: 100%;
+}
+section a{
+    width: 20%;
+    display:inline-block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+section a>img{
+   width: 100%;
+}
+ .banner{
+     margin-top: 0.2rem;
+    width: 100%;
+    font-size: 0.18rem;
+    background-color: white;
+    overflow: hidden;
+}
+.banner{
+    width: 100%;
+    text-align: center;
+}
+.banner p{
+    width: 100%;
+}
+.banner p img{
+    width: 60%;
+}
+.banner-left{
+    font-size: .16rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.banner-left a{
+    display: inline-block;
+    width: 48%;
+    color: black;
+    text-decoration: none;
+}
+.banner-left a>img{
+    width: 100%;
+}
+.banner-left a:nth-child(4)>p{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+footer a{
+display: inline-block;
+font-size: 0.14rem;
+color: gray; width: 20%;
+}
+footer a>img{
+    width: 100%;
+}

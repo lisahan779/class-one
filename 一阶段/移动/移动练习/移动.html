@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .b_main{position:absolute}
+        .out{
+            position:absolute;
+            top:7px;
+            border-color:transparent #999999 transparent transparent;
+            border-style:dashed dashed solid dashed;
+            border-width:8px;
+            
+        }
+        .in{
+            position:absolute;
+            border-color:transparent #ffffff transparent transparent;
+            border-style:dashed dashed solid dashed;
+            border-width:8px;
+            top:-8px;
+            left:-6px;
+        }
+        .border{
+            position:relative;
+            border:1px solid #999999;
+            padding:10px;
+            left:16px;
+            border-radius:5px;
+        }
+        .jiao{
+            margin: 100px;
+           /* 转换下面的三个的顺序就可以得到各个方向的三角形 前提是有相对定位*/
+            position:absolute;
+            border-color: black transparent transparent transparent;
+            border-style:dashed solid dashed  dashed;
+            border-width:22px;
+            
+        }
+        .jiao1{
+            
+            position: absolute;
+            border-color:  wheat transparent transparent transparent ; 
+            border-style:dashed solid dashed dashed;
+            border-width:22px;
+            top: 2px;
+            right: 2px;
+            
+        }
+        </style>
+        </head>
+
+        <body>
+        <div class="b_main">
+            <div class="border">效果实现^_^</div>
+            <div class="out">
+                <div class="in"></div>
+            </div>
+        </div>
+       
+        <div class="jiao">
+            <div class="jiao1"></div>
+        </div>
+</body>
+</html>
+ 
